@@ -29,7 +29,7 @@ Kurulum sonrasında sisteme giriş için aşağıdaki test kullanıcısı tanım
 | Alan | Değer |
 |------|-------|
 | Kullanıcı adı | admin |
-| Şifre | 123456 |
+| Şifre | 1234 |
 
 ## Yapılandırma
 
