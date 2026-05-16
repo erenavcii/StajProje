@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StajProje.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87086724ce8cefdaf76c0e046fa1044e31ef4ce0")]
 [assembly: System.Reflection.AssemblyProductAttribute("StajProje.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StajProje.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

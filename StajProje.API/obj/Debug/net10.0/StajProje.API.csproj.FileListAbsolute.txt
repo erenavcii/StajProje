@@ -142,3 +142,4 @@ C:\Users\EREN\Desktop\staj_proje\StajProje.API\obj\Debug\net10.0\refint\StajProj
 C:\Users\EREN\Desktop\staj_proje\StajProje.API\obj\Debug\net10.0\StajProje.API.pdb
 C:\Users\EREN\Desktop\staj_proje\StajProje.API\obj\Debug\net10.0\StajProje.API.genruntimeconfig.cache
 C:\Users\EREN\Desktop\staj_proje\StajProje.API\obj\Debug\net10.0\ref\StajProje.API.dll
+C:\Users\EREN\Desktop\staj_proje\StajProje.API\obj\Debug\net10.0\StajProje.API.sourcelink.json
