@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card shadow">
+        <div class="card-body p-4">
+          <h4 class="card-title text-center mb-4">Giriş Yap</h4>
+
+          <div *ngIf="errorMessage" class="alert alert-danger">
+            {{ errorMessage }}
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Kullanıcı Adı</label>
+            <input type="text" class="form-control" [(ngModel)]="username" placeholder="Kullanıcı adınızı girin" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Şifre</label>
+            <input type="password" class="form-control" [(ngModel)]="password" placeholder="Şifrenizi girin" />
+          </div>
+
+          <button class="btn btn-primary w-100" (click)="login()">Giriş Yap</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

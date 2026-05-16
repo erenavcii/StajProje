@@ -1,0 +1,50 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h4>Fatura Listesi</h4>
+    <div>
+      <button class="btn btn-success me-2" (click)="newInvoice()">+ Yeni Fatura</button>
+      <button class="btn btn-outline-secondary" (click)="logout()">Çıkış</button>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-3">
+      <label class="form-label">Başlangıç Tarihi</label>
+      <input type="date" class="form-control" [(ngModel)]="startDate" />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Bitiş Tarihi</label>
+      <input type="date" class="form-control" [(ngModel)]="endDate" />
+    </div>
+    <div class="col-md-2 d-flex align-items-end">
+      <button class="btn btn-primary w-100" (click)="loadInvoices()">Filtrele</button>
+    </div>
+  </div>
+
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Fatura No</th>
+        <th>Müşteri</th>
+        <th>Tarih</th>
+        <th>Tutar</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of invoices">
+        <td>{{ invoice.invoiceNumber }}</td>
+        <td>{{ invoice.customer?.title }}</td>
+        <td>{{ invoice.invoiceDate | date:'dd.MM.yyyy' }}</td>
+        <td>{{ invoice.totalAmount | currency:'TRY':'symbol' }}</td>
+        <td>
+          <button class="btn btn-sm btn-warning me-1" (click)="editInvoice(invoice.invoiceId)">Düzenle</button>
+          <button class="btn btn-sm btn-danger" (click)="deleteInvoice(invoice)">Sil</button>
+        </td>
+      </tr>
+      <tr *ngIf="invoices.length === 0">
+        <td colspan="5" class="text-center text-muted">Kayıt bulunamadı.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
