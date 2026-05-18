@@ -1,4 +1,3 @@
-```
 USE [StajProje]
 GO
 /****** Object:  Table [dbo].[Customer]    Script Date: 16.05.2026 19:23:26 ******/
@@ -97,7 +96,6 @@ GO
 ALTER TABLE [dbo].[InvoiceLine]  WITH CHECK ADD FOREIGN KEY([UserId])
 REFERENCES [dbo].[User] ([UserId])
 GO
-```
 
 -- Test kullanıcısı
 INSERT INTO [User] (UserName, Password, RecordDate)
